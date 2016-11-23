@@ -48,10 +48,16 @@
     <Reference Include="log4net">
       <HintPath>$(SolutionDir)\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="AssemblyVersion.cs" />
+    <Compile Include="Com\Latipium\Defaults\Player\InterfaceHandler.cs" />
+    <Compile Include="Com\Latipium\Defaults\Player\PlayerLoader.cs" />
+    <Compile Include="Com\Latipium\Defaults\Player\PlayerModule.cs" />
+    <Compile Include="Com\Latipium\Defaults\Player\PlayerObject.cs" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
