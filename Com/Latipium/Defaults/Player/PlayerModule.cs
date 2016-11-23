@@ -24,16 +24,23 @@ namespace Com.Latipium.Defaults.Player {
 		/// <summary>
 		/// Sets a player to handle the keyboard/mouse for.
 		/// </summary>
-		/// <param name="player">The player.</param>
+		/// <param name="obj">The player.</param>
 		[LatipiumMethod("HandleFor")]
 		public void HandleFor(LatipiumObject obj) {
 			PlayerLoader.Instance.Object = obj;
 		}
 
+        /// <summary>
+        /// Loads this module.
+        /// </summary>
+        /// <param name="name">The module name.</param>
 		public override void Load(string name) {
 			Loaded = true;
 		}
 
+        /// <summary>
+        /// Loads this module.
+        /// </summary>
 		public void Load() {
 			ModuleFactory.FindModule("Com.Latipium.Modules.Player");
 		}

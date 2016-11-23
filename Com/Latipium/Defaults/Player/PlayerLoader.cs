@@ -12,6 +12,9 @@ namespace Com.Latipium.Defaults.Player {
 	public class PlayerLoader : AbstractLatipiumLoader {
 		internal static PlayerObject Instance;
 
+        /// <summary>
+        /// Loads the player module.
+        /// </summary>
 		public override void Load() {
 			if ( PlayerModule.Loaded ) {
 				LatipiumModule worldObjects = ModuleFactory.FindModule("Com.Latipium.Modules.World.Objects");
